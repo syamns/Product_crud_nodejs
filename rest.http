@@ -1,0 +1,59 @@
+GET http://localhost:3000/product/list 
+
+###
+
+post  http://localhost:3000/product/create 
+Content-Type: application/json
+
+{
+    "name":"redmi7",
+    "price":8499,
+    "category":"mobile",
+    "productcode":"N20"
+
+}
+
+### 
+GET  http://localhost:3000/product/603d493184d72244809ca37f   
+
+
+###
+post http://localhost:3000/product/603d493184d72244809ca37f
+Content-Type: application/json
+
+{
+    "name":"realme Narzo20A",
+    "price":8499,
+    "category":"mobile",
+    "productcode":"Pc3"
+
+}
+
+###
+delete http://localhost:3000/product/603d493184d72244809ca37f 
+
+###
+get http://localhost:3000/xyx
+
+
+###
+ 
+post  http://localhost:3000/user/signup 
+Content-Type: application/json
+
+{
+    "name":"amal",
+    "email":"amal@gmail.com",
+    "phone":9048871190,
+    "password":"test@123"
+
+}
+###
+post  http://localhost:3000/user/signin 
+Content-Type: application/json
+
+{
+    "username":"amal@gmail.com",
+    "password":"test@123"
+
+}
